@@ -1,22 +1,4 @@
-button:hover {
-  background-color: brown;
-}
 body {
   text-align: center;
-}
-/* Menubar css */
-ul {
-  display: flex;
-  justify-content: center;
-  background-color: aquamarine;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-li {
-  justify-items: center;
-  padding: 10px;
-}
-li:hover {
-  background-color: chartreuse;
+  /* background-color: black; */
 }

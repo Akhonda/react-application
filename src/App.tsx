@@ -1,11 +1,11 @@
-// import Counter from './components/Counter'
+import "./App.css"
+import Cards from "./components/cards/Cards"
 import Menu from './components/menu/Menu'
-
 const App = () => {
   return (
     <div>
-      {/* <Counter/> */}
-      <Menu/>
+      <Menu />
+      <Cards/>
     </div>
   )
 }

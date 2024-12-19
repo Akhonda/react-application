@@ -1,22 +1,23 @@
 // import React from 'react'
+import "../../App.css"
 const Menu = () => {
   return (
-    <div>
+    <nav className="navbar">
       <ul>
         <li>
-          <a href="default.asp">Home</a>
+          <a href="#home">Home</a>
         </li>
         <li>
-          <a href="news.asp">News</a>
+          <a href="#about">About</a>
         </li>
         <li>
-          <a href="contact.asp">Contact</a>
+          <a href="#services">Services</a>
         </li>
         <li>
-          <a href="about.asp">About</a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 };
 
