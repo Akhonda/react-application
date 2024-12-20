@@ -1,4 +1,12 @@
-const CardData = [
+import React from "react";
+
+interface CardProps {
+  image: string;
+  title: string;
+  Description: string;
+}
+
+const CardData: CardProps[] = [
   {
     image: "T",
     title: "Twitter",
@@ -55,7 +63,7 @@ const CardData = [
   },
 ];
 
-const Cards = () => {
+const TCard = () => {
   return (
     <div className="container">
       {/* {CardData.map(()=>())} sonerlint */}
@@ -71,4 +79,4 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+export default TCard;
