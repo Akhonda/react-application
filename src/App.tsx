@@ -9,7 +9,7 @@ const App = () => {
       <Menu />
       <Counter />
       <Cards />
-      <h1>New Cards</h1>
+      <h1>New  mahmud Cards</h1>
       <TCard />
     </div>
   );
