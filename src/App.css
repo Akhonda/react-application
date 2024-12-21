@@ -220,3 +220,158 @@ li a {
     background-color: blue;
   }
 }
+
+
+
+
+
+/* menu bar new */
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header Menu */
+.menu-header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+/* Logo */
+.menu-logo img {
+  height: 40px;
+}
+
+/* Navigation */
+.menu-nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.menu-nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.menu-nav ul li a:hover {
+  color: #007bff;
+}
+
+/* Buttons */
+.menu-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.login-btn,
+.register-btn {
+  text-decoration: none;
+  font-size: 14px;
+  padding: 8px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.login-btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+}
+
+.register-btn {
+  background-color: #f1f1f1;
+  color: #007bff;
+}
+
+.register-btn:hover {
+  background-color: #ddd;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+  display: none;
+  width: 25px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  /* Hide desktop menu */
+  .menu-nav {
+    display: none;
+  }
+
+  /* Show mobile toggle button */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Mobile Navigation */
+  .menu-mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    left: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+  }
+
+  .menu-mobile a {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .menu-mobile a:last-child {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-container {
+    flex-wrap: wrap;
+  }
+
+  .menu-logo img {
+    height: 35px;
+  }
+
+  .login-btn,
+  .register-btn {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
